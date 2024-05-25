@@ -1,0 +1,100 @@
+header {
+    .background_image {
+        background-image: url('../assets/images/header_background.png');
+        background-size: cover;
+        background-position: center;
+        z-index: -999;
+
+        .container {
+            color: white;
+            padding-top: 60px;
+            padding-bottom: 470px;
+
+            nav {
+                margin-bottom: 60px;
+
+                ul {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr 1fr 1.6fr;
+                    grid-template-rows: 1fr;
+                    grid-template-areas:
+                        "logo home gallery products review support searchingBtn";
+                    align-content: center;
+                    justify-items: center;
+                    align-items: center;
+
+                    img {
+                        z-index: 1;
+                        object-fit: contain;
+                    }
+
+                    li {
+                        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                        // img {
+                        //     z-index: 1;
+                        //     object-fit: contain;
+                        // }
+
+                        a {
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 27px;
+
+
+
+                        }
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            color: #1ABC9C
+                        }
+                    }
+                }
+            }
+
+            .header_content {
+                margin: 0 auto;
+                max-width: 684px;
+                align-items: center;
+                text-align: center;
+
+                h1 {
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 54px;
+                    padding-top: 13px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #969696;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 27px;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                a {
+                    background-color: #2E4DEC;
+                    border-radius: 30px;
+                    padding: 12px 58px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 27px;
+                    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                    &:hover {
+                        padding: 14px 65px;
+                        background-color: #1ABC9C;
+                    }
+                }
+            }
+        }
+    }
+}

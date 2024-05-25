@@ -1,0 +1,88 @@
+footer {
+    width: 100%;
+    background-color: black;
+
+    .footer_content_box {
+        color: white;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 259px 117px 147px 203px;
+        grid-template-rows: 1fr;
+        gap: 0% 15%;
+        grid-template-areas:
+            "first second third fourth";
+        align-content: center;
+        justify-items: center;
+        padding: 100px 264px 100px 150px;
+
+        .logo_column {
+
+
+            .footer_logo {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 28px;
+                padding-top: -40px;
+            }
+
+            h2 {
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 39px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 27px;
+
+            }
+        }
+
+        .column {
+            h3 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 30px;
+            }
+
+
+        }
+
+        .text_style {
+            ul li {
+                display: inline-block;
+                position: relative;
+                margin-bottom: 15px;
+
+                a {
+                    font-weight: 200;
+                    font-size: 18px;
+                    line-height: 27px;
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #606060;
+                    transform-origin: bottom right;
+                    transition: transform 0.35s ease-out;
+                    border-radius: 35px;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+    }
+}

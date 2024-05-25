@@ -1,0 +1,89 @@
+.cards_container {
+    padding: 30px;
+
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        section {
+            position: relative;
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            padding: 120px 50px 360px;
+            color: white;
+
+            .left_info {
+                text-align: center;
+                padding: 20px;
+
+                h2 {
+                    color: black;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 72px;
+                }
+
+                p {
+                    color: rgba(#222222, 0.5);
+                    line-height: 50px;
+                    margin: 10px 0 0; // Відступи зверху та знизу
+                    font-size: 28px; // Розмір шрифту для параграфу
+
+                    span {
+                        display: block;
+                    }
+
+                    b {
+                        font-weight: 300;
+                        color: black;
+                    }
+                }
+            }
+
+            .right_info {
+                text-align: center;
+                padding: 20px;
+
+                h2 {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 72px;
+                }
+
+                p {
+                    color: rgba(#FFFFFF, 0.5);
+                    line-height: 50px;
+                    margin: 10px 0 0;
+                    font-size: 28px;
+
+                    span {
+                        display: block;
+                    }
+
+                    b {
+                        font-weight: 300;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .left_card {
+            background-image: url('../assets/images/left_card.png');
+            width: 780px;
+            height: 760px;
+
+        }
+
+        .right_card {
+            background-image: url('../assets/images/right_card.png');
+            width: 780px;
+            height: 760px;
+        }
+    }
+}
